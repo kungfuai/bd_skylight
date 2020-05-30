@@ -39,6 +39,10 @@ for task_id in tasks:
 # wash += Alice | Bob
 # clean += Alice | Bob
 
+# Capacity constraints.
+for r in resources.values():
+    S += r[0:10] <= 10
+
 # compute and print a schedule
 solvers.mip.solve(S, msg=1)
 print(S.solution())
