@@ -1,0 +1,6 @@
+pandas
+docplex
+numpy
+matplotlib
+pyschedule==0.2.34
+pulp==1.6.10
